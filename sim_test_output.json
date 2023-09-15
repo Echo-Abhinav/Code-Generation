@@ -1,0 +1,15 @@
+[
+    {
+        "intent": "[CLS] set var_2 . var_3 var_2 ib ##ute of the var_0 object to var_2 . [SEP]",
+        "reference": "setattr ( Module_six_moves_urllib_error , attr . name , attr )",
+        "Output": "setattr ( Module_six_moves_urllib_error , attr . name , attr )",
+        "Var_Maps": [
+            {
+                "Module_six_moves_urllib_error": "var_0",
+                "setattr": "var_1",
+                "attr": "var_4",
+                "name": "var_3"
+            }
+        ]
+    }
+]

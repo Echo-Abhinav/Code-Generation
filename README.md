@@ -1,2 +1,7 @@
-# Code-Generation
- 
+# Code Generation
+Code generation is the task of generating source code based on inputs provided by user in natural language or code into code snippets. It helps developers to finish programming tasks faster, by reducing the time to develop the code and decrease maintenance costs.
+
+![Example](/assets/images/example.png)
+
+Transformers is the state-of-the-art model for natural language tasks. This project is majorly part of [TranX: A Transition-based Neural Abstract Syntax Parser for Semantic Parsing and Code Generation](https://aclanthology.org/D18-2002/) and [The impact of lexical and grammatical processing on generating code from natural language](https://arxiv.org/abs/2202.13972). The TranX paper provided us with Abstract Syntax Description Lanuguage for Python. This generates code using the grammar rules of Python which provides high accuracy by following the grammatical constraints, restricting the output space, and model the information flow. The latter paper proposes to use a BERT encoder with lexical substitution and further highlights the importance of grammatical constraints, lexical processing, and BERT configurations. The model obtains 34.10 BLEU on CoNaLa and 79.24 BLEU on Django. Even though BLEU is frequently employed in the literature, they are not ideal metrics, particularly since high BLEU scores do not ensure that the code will be executable or correct. Since multiple Python programs can solve a single natural language query, even an exact match is unsatisfactory. Future work on this should be to build an evaluating benchmark for code generation. 
+
